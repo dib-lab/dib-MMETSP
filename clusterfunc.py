@@ -12,7 +12,6 @@ def check_dir(dirname):
         os.mkdir(dirname)
         print("Directory created:"), dirname
 
-
 def get_qsub_filename(basedir, process_name, filename):
     qsub_dir = basedir + "qsub_files/"
     check_dir(qsub_dir)
@@ -27,12 +26,13 @@ def get_module_load_list(module_name_list):
         module_list.append(module_load)
     return module_list
 
-
 def qsub_file(basedir, process_name, module_name_list, filename, process_string):
     working_dir = os.getcwd()
     qsub_dir, qsub_filename = get_qsub_filename(
         basedir, process_name, filename)
     os.chdir(qsub_dir)
+    if os.path.isdir(qsub_dir):
+        print(qsub_filename)
     module_load = get_module_load_list(module_name_list)
 # directive to use Laconia
 # #PBS -l feature=intel16
@@ -62,6 +62,6 @@ cd ${{PBS_O_WORKDIR}}
             "env | grep PBS # Print out values of the current jobs PBS environment variables\n")
     qsub_string = 'qsub -V ' + qsub_filename
     print(qsub_string)
-    s = subprocess.Popen(qsub_string, shell=True)
-    s.wait()
+    #s = subprocess.Popen(qsub_string, shell=True)
+    #s.wait()
     os.chdir(working_dir)

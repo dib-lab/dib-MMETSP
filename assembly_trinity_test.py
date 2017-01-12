@@ -1,17 +1,12 @@
-# /usr/bin/env python
-
 import os
 import os.path
 from os.path import basename
 import subprocess
 from subprocess import Popen, PIPE
-import shutil
-import glob
 # import configuration variables
 import dibMMETSP_configuration as dib_conf
 # custom Lisa module
 import clusterfunc
-
 
 def get_data(thefile):
     count = 0
@@ -39,7 +34,6 @@ def get_data(thefile):
                 url_data[name_read_tuple] = [ftp]
         return url_data
 
-
 def combine_orphans(diginormdir):
     diginorm_files_dir = diginormdir + "qsub_files/"
     rename_orphans = """
@@ -50,7 +44,6 @@ do
 done
 """.format(diginorm_files_dir, diginormdir, diginorm_files_dir, diginormdir)
     return rename_orphans
-
 
 def rename_files(trinitydir, diginormdir, diginormfile, SRA):
     # takes diginormfile in,splits reads and put into newdir
@@ -92,7 +85,7 @@ def execute(trinity_fail, count, data_dir):
     id_list = os.listdir(data_dir)
     for mmetsp in id_list:
         print(mmetsp)
-        if mmetsp != "qsub_files":
+        if mmetsp.startswith("MMETSP"):
             mmetspdir = data_dir + mmetsp + "/"
             trinitydir = data_dir + mmetsp + "/" + "trinity/"
             trinity_files = os.listdir(mmetspdir)
@@ -101,21 +94,12 @@ def execute(trinity_fail, count, data_dir):
             if os.path.isfile(trinity_fasta) == False:
                 if os.path.isfile(dib_conf.output_dir + mmetsp + dib_conf.output_extension):
                     print("Trinity finished.")
-                    count +=1
+                    count += 1
                 else:
                     print(mmetspdir)
-                    right = [s for s in trinity_files if s.endswith(".right.fq")][0]
-                    left = [s for s in trinity_files if s.endswith(".left.fq")][0]
-                    right = mmetspdir + right
-                    left = mmetspdir + left
-                    if os.path.isfile(left) and os.path.isfile(right):
-                        right = [s for s in trinity_files if s.endswith(".right.fq")][0]
-                        left = [s for s in trinity_files if s.endswith(".left.fq")][0]
-                        right = mmetspdir + right
-                        left = mmetspdir + left
-                        run_trinity(trinitydir, left, right, mmetsp, dib_conf.output_dir, dib_conf.output_extension)
-                    else:
-                        print("No files:",left)
+                    right = mmetspdir + mmetsp + ".right.fq"
+                    left = mmetspdir + mmetsp + ".left.fq"
+                    run_trinity(trinitydir, left, right, mmetsp, dib_conf.output_dir, dib_conf.output_extension)
             else:
                 print("Trinity completed successfully.", trinity_fasta)
                 count += 1
