@@ -27,10 +27,10 @@ The Marine Microbial Eukaryotic Transcriptome Sequencing Project (MMETSP) data s
 The main pipeline scripts in this repository:
 
 <ol type="a">
-  <li>`getdata.py`, download data from NCBI and organize into individual directories for each sample/accession ID</li>
-  <li>`trim_qc.py`, trim reads for quality, interleave reads</li>
-  <li>`diginorm_mmetsp.py`, normalize-by-median and filter-abund from khmer, rename, combined orphans</li>
-  <li>`assembly.py`, runs Trinity de novo transcriptome assembly software</li>
+  <li> `getdata.py`, download data from NCBI and organize into individual directories for each sample/accession ID</li>
+  <li> `trim_qc.py`, trim reads for quality, interleave reads</li>
+  <li> `diginorm_mmetsp.py`, normalize-by-median and filter-abund from khmer, rename, combined orphans</li>
+  <li> `assembly.py`, runs Trinity de novo transcriptome assembly software</li>
 </ol>
 
 ![](mmetsp_pipeline1.png)
