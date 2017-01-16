@@ -26,27 +26,30 @@ The Marine Microbial Eukaryotic Transcriptome Sequencing Project (MMETSP) data s
 
 The main pipeline scripts in this repository:
 
-a. `getdata.py`, download data from NCBI and organize into individual directories for each sample/accession ID
-b. `trim_qc.py`, trim reads for quality, interleave reads
-c. `diginorm_mmetsp.py`, normalize-by-median and filter-abund from khmer, rename, combined orphans,
-d. `assembly.py`, runs Trinity de novo transcriptome assembly software 
+<ol type="a">
+  <li>`getdata.py`, download data from NCBI and organize into individual directories for each sample/accession ID</li>
+  <li>`trim_qc.py`, trim reads for quality, interleave reads</li>
+  <li>`diginorm_mmetsp.py`, normalize-by-median and filter-abund from khmer, rename, combined orphans</li>
+  <li>`assembly.py`, runs Trinity de novo transcriptome assembly software</li>
+</ol>
 
 ![](mmetsp_pipeline1.png)
 
 Annotation and expression counts (run separately):
 
-e. `dammit.py`, annotation https://github.com/camillescott/dammit/tree/master/dammit
-f. `salmon.py`, runs salmon reference-free transcript quantification https://github.com/COMBINE-lab/salmon
+* `dammit.py`, annotation https://github.com/camillescott/dammit/tree/master/dammit
+* `salmon.py`, runs salmon reference-free transcript quantification https://github.com/COMBINE-lab/salmon
+
 
 Additional scripts (run separately):
 
-`rapclust.py`, clustering contigs https://github.com/COMBINE-lab/rapclust
-`busco.py`, assessing assembly and annotation completeness with single-copy orthologs http://busco.ezlab.org/
-`clusterfunc.py`, cluster control module
-`sourmash.py`, MinHash signatures to cluster unassembled reads https://github.com/dib-lab/sourmash/tree/v0.9.4
-`transdecoder.py`, translate nucleotide contigs to amino acid contigs http://transdecoder.github.io/
-`transrate.py`, evaluate assembly with reads http://hibberdlab.com/transrate/
-`transrate_reference.py`, evaluate assembly with reference assembly http://hibberdlab.com/transrate/
+* `rapclust.py`, clustering contigs https://github.com/COMBINE-lab/rapclust
+* `busco.py`, assessing assembly and annotation completeness with single-copy orthologs http://busco.ezlab.org/
+* `clusterfunc.py`, cluster control module
+* `sourmash.py`, MinHash signatures to cluster unassembled reads https://github.com/dib-lab/sourmash/tree/v0.9.4
+* `transdecoder.py`, translate nucleotide contigs to amino acid contigs http://transdecoder.github.io/
+* `transrate.py`, evaluate assembly with reads http://hibberdlab.com/transrate/
+* `transrate_reference.py`, evaluate assembly with reference assembly http://hibberdlab.com/transrate/
 
 References:
 
