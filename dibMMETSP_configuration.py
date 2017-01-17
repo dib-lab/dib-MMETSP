@@ -8,7 +8,7 @@ base_dir = '/mnt/home/ljcohen/'
 sra_csv = 'SraRunInfo.csv'
 
 # Assembly script to be run
-assembly_version = 'assembly_trinity_test.py'
+assembly_version = 'assembly_trinity_2.2.0.py'
 
 # Directory where scripts will be written within base_dir
 scripts_dir = '/mnt/home/ljcohen/MMETSP/'
