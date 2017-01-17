@@ -1,8 +1,8 @@
 if __name__ == "__main__":
-    import getdata_test as get_data
-    import trim_qc_test as trim_qc
-    import diginorm_mmetsp_test as diginorm
-    import assembly_trinity_test as assembly
+    import getdata as data
+    import trim_qc as trim
+    import diginorm_mmetsp as diginorm
+    import assembly_trinity as assembly
     import dibMMETSP_configuration as dib_conf
     import clusterfunc
     # set working directories
@@ -13,12 +13,12 @@ if __name__ == "__main__":
     count = 0
     for datafile in datafiles:
         # get data
-        url_data=get_data.get_data_dict(datafile)
+        url_data=data.get_data_dict(datafile)
         print(url_data)
         # get data from NCBI
-        get_data.execute(data_dir,url_data)
+        data.execute(data_dir,url_data)
         # run trim, qc
-        trim_qc.execute(url_data,data_dir)
+        trim.execute(url_data,data_dir)
         # diginormdir
         diginorm.execute(data_dir, url_data)
         # Assembly of data
