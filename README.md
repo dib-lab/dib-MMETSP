@@ -4,7 +4,7 @@ Originally: https://github.com/ljcohen/MMETSP
 
 This pipeline was constructed to automate the [eel pond](https://github.com/dib-lab/eel-pond) [khmer protocols](https://khmer-protocols.readthedocs.org/en/ctb/mrnaseq/) over a large-scale RNAseq data set. The data set used is from the Marine Microbial Eukaryotic Transcriptome Sequencing Project (MMETSP), which contains 678 cultured samples of 306 pelagic and endosymbiotic marine eukaryotic species representing more than 40 phyla (Keeling et al. 2014).
 
-These scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/). Scripts will download and extract data from the Sequence Read Archive (SRA), run qc, trim, diginorm, then assemble using Trinity. Scripts will be launched in parallel through the portable batch system (PBS) scheduler. If you are interested in using these scripts, please be aware that modifications will be required specific to to the system you are using.
+These scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/). Scripts will download and extract data from the Sequence Read Archive (SRA), run qc, trim, diginorm, then assemble using Trinity. Scripts will be launched in parallel through the portable batch system (PBS) scheduler. If you are interested in using these scripts, please be aware that modifications will be required specific to the system you are using.
 
 The main pipeline scripts in this repository:
 
