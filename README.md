@@ -2,7 +2,7 @@
 This is the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
 Originally: https://github.com/ljcohen/MMETSP
 
-This pipeline was constructed to automate the khmer protocols over a large-scale RNAseq data set:
+This pipeline was constructed to automate the [eel pond](https://github.com/dib-lab/eel-pond) khmer protocols over a large-scale RNAseq data set:
 
 https://khmer-protocols.readthedocs.org/en/ctb/mrnaseq/
 
