@@ -1,6 +1,6 @@
 # dib-MMETSP
 
-Output files available for download:
+### Output files available for download:
 
 Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.251828.svg)](https://doi.org/10.5281/zenodo.251828)
 
@@ -14,9 +14,11 @@ All files combined: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257410.s
 
 Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg)](https://doi.org/10.5281/zenodo.249982)
 
-Citation:
+### Citation:
 
 Cohen, Lisa, Alexander, Harriet, & Brown, C. Titus. (2017). MMETSP re-assemblies [Data set]. Zenodo. http://doi.org/10.5281/zenodo.251828
+
+### MMETSP pipeline
 
 This respository contains the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
 Originally: https://github.com/ljcohen/MMETSP
@@ -49,7 +51,7 @@ Additional scripts (run separately):
 * `transrate.py`, evaluate assembly with reads http://hibberdlab.com/transrate/
 * `transrate_reference.py`, evaluate assembly with reference assembly http://hibberdlab.com/transrate/
 
-Instructions for use:
+### Usage:
 
 1. Clone this repo 
 
@@ -65,7 +67,7 @@ git clone https://github.com/dib-lab/dib-MMETSP.git
 python main.py
 ```
 
-References:
+### References
 
 Keeling et al. 2014: http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001889
 
