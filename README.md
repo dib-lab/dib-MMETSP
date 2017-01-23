@@ -14,6 +14,10 @@ All files combined: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257410.s
 
 Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg)](https://doi.org/10.5281/zenodo.249982)
 
+Citation:
+
+Cohen, Lisa, Alexander, Harriet, & Brown, C. Titus. (2017). MMETSP re-assemblies [Data set]. Zenodo. http://doi.org/10.5281/zenodo.251828
+
 This respository contains the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
 Originally: https://github.com/ljcohen/MMETSP
 
@@ -74,3 +78,7 @@ https://github.com/ncgr/rbpa
 MMETSP website: http://marinemicroeukaryotes.org/
 
 iMicrobe project with data and combined assembly downloads: ftp://ftp.imicrobe.us/projects/104/
+
+Blog posts: https://monsterbashseq.wordpress.com/2016/09/13/mmetsp-re-assemblies/
+
+http://ivory.idyll.org/blog/2016-mmetsp-a-first-look.html
