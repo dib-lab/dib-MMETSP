@@ -1,18 +1,18 @@
 # dib-MMETSP
 
-Available for download:
+Files available for download:
 
-Transcriptome assembly fasta files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.251828.svg)](https://doi.org/10.5281/zenodo.251828)
+Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.251828.svg)](https://doi.org/10.5281/zenodo.251828)
 
-Annotation gff files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
+Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
 
-Peptide translation fasta files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
+Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
 
-Salmon quantification files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
+Expression quantification (salmon output): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
 
 All files combined: 
 
-
+Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg)](https://doi.org/10.5281/zenodo.249982)
 
 This respository contains the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
 Originally: https://github.com/ljcohen/MMETSP
