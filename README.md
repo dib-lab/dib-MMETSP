@@ -1,10 +1,25 @@
 # dib-MMETSP
-This is the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
+
+Available for download:
+
+Transcriptome assembly fasta files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.251828.svg)](https://doi.org/10.5281/zenodo.251828)
+
+Annotation gff files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
+
+Peptide translation fasta files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
+
+Salmon quantification files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
+
+All files combined: 
+
+
+
+This respository contains the pipeline code used to generate re-assemblies of the Marine Microbial Eukaryote Transcriptome Sequencing Project (MMETSP).
 Originally: https://github.com/ljcohen/MMETSP
 
 This pipeline was constructed to automate the [eel pond](https://github.com/dib-lab/eel-pond) [khmer protocols](https://khmer-protocols.readthedocs.org/en/ctb/mrnaseq/) over a large-scale RNAseq data set. The data set used is from the Marine Microbial Eukaryotic Transcriptome Sequencing Project (MMETSP), which contains 678 cultured samples of 306 pelagic and endosymbiotic marine eukaryotic species representing more than 40 phyla (Keeling et al. 2014).
 
-These scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/). Scripts will download and extract data from the Sequence Read Archive (SRA), run qc, trim, diginorm, then assemble using Trinity. Scripts will be launched in parallel through the portable batch system (PBS) scheduler. If you are interested in using these scripts, please be aware that modifications will be required specific to the system you are using.
+Scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/), and will be launched in parallel through the portable batch system (PBS) scheduler. Scripts will download and extract data from the Sequence Read Archive (SRA), run qc, trim, diginorm, then assemble using Trinity. If you are interested in using these scripts, please be aware that modifications will be required specific to the system you are using.
 
 The main pipeline scripts in this repository:
 
