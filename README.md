@@ -19,7 +19,7 @@ Originally: https://github.com/ljcohen/MMETSP
 
 This pipeline was constructed to automate the [eel pond](https://github.com/dib-lab/eel-pond) [khmer protocols](https://khmer-protocols.readthedocs.org/en/ctb/mrnaseq/) over a large-scale RNAseq data set. The data set used is from the Marine Microbial Eukaryotic Transcriptome Sequencing Project (MMETSP), which contains 678 cultured samples of 306 pelagic and endosymbiotic marine eukaryotic species representing more than 40 phyla (Keeling et al. 2014).
 
-Scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/), and will be launched in parallel through the portable batch system (PBS) scheduler. Scripts will download and extract data from the Sequence Read Archive (SRA), run qc, trim, diginorm, then assemble using Trinity. If you are interested in using these scripts, please be aware that modifications will be required specific to the system you are using.
+Scripts were designed for the high performance computing cluster at [Michigan State University, iCER](https://icer.msu.edu/), and will be launched in parallel through the portable batch system (PBS) scheduler. Scripts use an [SraRunInfo.csv](https://raw.githubusercontent.com/dib-lab/dib-MMETSP/master/SraRunInfo.csv) metadata spreadsheet downloaded from [NCBI-SRA](http://www.ncbi.nlm.nih.gov/bioproject/PRJNA231566/) that contains the url and sample ID information to download and extract data, run qc, trim, diginorm, then assemble using Trinity. If you are interested in using these scripts, please be aware that modifications will be required specific to the system you are using.
 
 The main pipeline scripts in this repository:
 
@@ -60,8 +60,6 @@ git clone https://github.com/dib-lab/dib-MMETSP.git
 ```
 python main.py
 ```
-
-
 
 References:
 
