@@ -10,7 +10,7 @@ Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenod
 
 Expression quantification (salmon output): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
 
-All files combined: 
+All files combined: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257410.svg)](https://doi.org/10.5281/zenodo.257410)
 
 Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg)](https://doi.org/10.5281/zenodo.249982)
 
