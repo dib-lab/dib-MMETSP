@@ -6,6 +6,8 @@ Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/z
 
 Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
 
+Table of one annotation name (best = sorted by e-value < 1e-05) by transcript ID (.csv): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.293722.svg)](https://doi.org/10.5281/zenodo.293722)
+
 Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
 
 Expression quantification (salmon output): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
