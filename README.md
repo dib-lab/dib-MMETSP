@@ -2,23 +2,24 @@
 
 ### Output files available for download:
 
-Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1212585.svg)](https://doi.org/10.5281/zenodo.1212585)
+Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.740440.svg)](https://doi.org/10.5281/zenodo.740440)
 
-Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
+Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.744702.svg)](https://doi.org/10.5281/zenodo.744702)
 
-Table of one annotation name (best = sorted by e-value < 1e-05) by transcript ID (.csv): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.293722.svg)](https://doi.org/10.5281/zenodo.293722)
+Table of one annotation name (best = sorted by e-value < 1e-05) by transcript ID (.csv): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.775129.svg)](https://doi.org/10.5281/zenodo.775129)
 
-Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
+Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.746294.svg)](https://doi.org/10.5281/zenodo.746294)
 
 Expression quantification (salmon output): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
 
-All files combined: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257410.svg)](https://doi.org/10.5281/zenodo.257410)
+All files combined: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.746048.svg)](https://doi.org/10.5281/zenodo.746048)
 
-Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg)](https://doi.org/10.5281/zenodo.249982)
+Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.594854.svg)](https://doi.org/10.5281/zenodo.594854)
+
 
 ### Citation:
 
-Johnson, Lisa K., Alexander, Harriet, & Brown, C. Titus. (2018). MMETSP re-assemblies [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1212585
+Johnson, Lisa K., Alexander, Harriet, & Brown, C. Titus. (2018). MMETSP re-assemblies [Data set]. Zenodo. https://doi.org/10.5281/zenodo.740440
 
 ### MMETSP pipeline
 
