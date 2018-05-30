@@ -2,7 +2,7 @@
 
 ### Output files available for download:
 
-Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.251828.svg)](https://doi.org/10.5281/zenodo.251828)
+Transcriptome assemblies (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1212585.svg)](https://doi.org/10.5281/zenodo.1212585)
 
 Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.255699.svg)](https://doi.org/10.5281/zenodo.255699)
 
@@ -18,7 +18,7 @@ Pipeline scripts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.249982.svg
 
 ### Citation:
 
-Cohen, Lisa, Alexander, Harriet, & Brown, C. Titus. (2017). MMETSP re-assemblies [Data set]. Zenodo. http://doi.org/10.5281/zenodo.251828
+Johnson, Lisa K., Alexander, Harriet, & Brown, C. Titus. (2018). MMETSP re-assemblies [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1212585
 
 ### MMETSP pipeline
 
