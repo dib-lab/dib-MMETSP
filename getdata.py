@@ -144,7 +144,7 @@ def fastqc(newdir, fastqcdir, filename):
     fastqc_report(fastq_file_list, newdir, fastqcdir, filename)
 
 datafile = "SraRunInfo.csv"
-basedir = "/mnt/scratch/ljcohen/mmetsp/"
+basedir = "~/"
 clusterfunc.check_dir(basedir)
 for datafile in datafiles:
     url_data = get_data(datafile)

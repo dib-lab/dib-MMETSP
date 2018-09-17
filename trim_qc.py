@@ -64,10 +64,11 @@ def run_trimmomatic_TruSeq(missing, trimmed, remaining, trimdir, file1, file2, s
 		else:
 			missing.append(trimdir)
 			j="""
-java -jar /mnt/home/ljcohen/bin/Trimmomatic-0.33/trimmomatic-0.33.jar PE \\
+# Trimmomaticv0.33
+java -jar trimmomatic-0.33.jar PE \\
 -baseout {}.trim.fq \\
 {} {} \\
-ILLUMINACLIP:/mnt/home/ljcohen/bin/Trimmomatic-0.33/adapters/combined.fa:2:40:15 \\
+ILLUMINACLIP:combined.fa:2:40:15 \\
 SLIDINGWINDOW:4:2 \\
 LEADING:2 \\
 TRAILING:2 \\
@@ -82,10 +83,11 @@ MINLEN:25 &> trim.{}.log
 	else:
 		remaining.append(trimdir)
 		j="""
-java -jar /mnt/home/ljcohen/bin/Trimmomatic-0.33/trimmomatic-0.33.jar PE \\
+# Trimmomatic v0.33
+java -jar trimmomatic-0.33.jar PE \\
 -baseout {}.trim.fq \\
 {} {} \\
-ILLUMINACLIP:/mnt/home/ljcohen/bin/Trimmomatic-0.33/adapters/combined.fa:2:40:15 \\
+ILLUMINACLIP:combined.fa:2:40:15 \\
 SLIDINGWINDOW:4:2 \\
 LEADING:2 \\
 TRAILING:2 \\
@@ -184,7 +186,7 @@ def execute(url_data,datadir):
     print remaining
 
 datafile="SraRunInfo.csv"
-datadir="/mnt/scratch/ljcohen/mmetsp/"
+datadir="~/mmetsp/"
 url_data=get_data(datafile)
 print url_data
 execute(url_data,datadir)

@@ -113,7 +113,7 @@ sed 's_|_-_g' {} > {}
     s = subprocess.Popen(fix, shell=True)
     print fix
     s.wait()
-    os.chdir("/mnt/home/ljcohen/MMETSP/")
+    os.chdir("~/")
     return trinity_out
 
 
@@ -153,7 +153,7 @@ def execute(trinity_fail, count, basedir, url_data):
             else:
                 print "Trinity completed successfully.", trinity_fasta
                 count += 1
-                assemblydir = "/mnt/scratch/ljcohen/mmetsp_assemblies/"
+                assemblydir = "~/mmetsp_assemblies/"
                 copy_string = "cp " + trinity_fasta + " " + assemblydir
                 print copy_string
                 s = subprocess.Popen(copy_string, shell=True)
@@ -170,7 +170,7 @@ def execute(trinity_fail, count, basedir, url_data):
     print trinity_fail
     return trinity_fail, count
 
-basedir = "/mnt/scratch/ljcohen/mmetsp/"
+basedir = "~/"
 
 datafiles = ["SraRunInfo.csv"]
 # datafiles=["MMETSP_SRA_Run_Info_subset_msu1.csv","MMETSP_SRA_Run_Info_subset_msu2.csv","MMETSP_SRA_Run_Info_subset_msu3.csv","MMETSP_SRA_Run_Info_subset_msu4.csv",

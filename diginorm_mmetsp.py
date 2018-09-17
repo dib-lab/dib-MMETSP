@@ -138,7 +138,7 @@ done
     s = subprocess.Popen("sudo bash combine_orphaned.sh", shell=True)
     s.wait()
     print "Orphans combined."
-    os.chdir("/home/ubuntu/MMETSP/")
+    os.chdir("~/")
 
 
 def rename_pe(diginormdir):
@@ -158,7 +158,7 @@ done
     print "renaming pe files now..."
     s = subprocess.Popen("sudo bash rename.sh", shell=True)
     s.wait()
-    os.chdir("/home/ubuntu/MMETSP/")
+    os.chdir("~/")
 
 
 def execute(basedir, url_data):
@@ -180,7 +180,7 @@ def execute(basedir, url_data):
             # run_diginorm(diginormdir,interleavedir,trimdir,SRA)
             run_filter_abund(diginormdir, SRA)
 
-basedir = "/mnt/scratch/ljcohen/mmetsp/"
-datafile = "MMETSP_SRA_Run_Info_subset_msu7.csv"
+basedir = "~/"
+datafile = "SraRunInfo.csv"
 url_data = get_data(datafile)
 execute(basedir, url_data)
