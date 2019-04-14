@@ -8,7 +8,7 @@ Annotations (gff): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.744702.sv
 
 Table of one annotation name (best = sorted by e-value < 1e-05) by transcript ID (.csv): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.775129.svg)](https://doi.org/10.5281/zenodo.775129)
 
-Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.746294.svg)](https://doi.org/10.5281/zenodo.746294)
+Peptide translations (fasta): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257026.svg)](https://doi.org/10.5281/zenodo.257026)
 
 Expression quantification (salmon output): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.257145.svg)](https://doi.org/10.5281/zenodo.257145)
 
